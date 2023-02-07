@@ -17,7 +17,7 @@ const contactFormTest = () => {
 	//evite une boucle:Si form pas encore envoyé alors click pr envoi/Si il ne trouve pas ds url 1 form validé
 	if (!window.location.search) {
 		submitBtn.click();
-
+	}
 	//Const contenant l'URL
 	const queryParams = new URLSearchParams(window.location.search);
 	//Si la longueur de username est > 0 return true
